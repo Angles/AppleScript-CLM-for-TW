@@ -1,6 +1,3 @@
-AppleScript-CLM-for-TW
-----------------------
-
 ## Applescript Codeless Language Module for TextWrangler ##
 
 Modified version of the excellent Bill Hernandez CLM from [http://www.mail-archive.com/bbedit&#64;googlegroups.com/msg00548.html](http://www.mail-archive.com/bbedit%40googlegroups.com/msg00548.html) the like was [here](http://bbeditextras.org/wiki/index.php?title=Codeless_Language_Modules) at a wiki called _bbeditextras_. So __I started with the Hernandez version__. 
@@ -14,7 +11,7 @@ More Colors
 
 I made _unorthodox_ use of the  Codeless Language Module `BBLMPredefinedNameList` _Predefined names_ info [here](http://www.barebones.com/support/develop/clm.html) it says _as used in the Text Colors preferences_. __more colors!__ Obligatory code example.
 
-```
+``` plist
 <!-- Testing use of this symbol: -->
 <key>BBLMPredefinedNameList</key>
 <array>

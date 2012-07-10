@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
 "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<!--
+<!--   (ORIGINAL AUTHOR, ORIGINAL HEADER)
   BBEdit Applescript Codeless Language Module.
   Bill Hernandez  <http://www.mac-specialist.com/>
   Version 1.0.1
@@ -38,6 +38,31 @@
         ( 3 ) Save to the [Language Modules] folder with the name "AppleScript_CLM.plist" 
         ( 4 ) Menu Select "Text -> Zap Gremlins..." to clear up any platform html incompatibilities
         ( 5 ) Make sure the TYPE AND CREATOR are empty, and restart BBEdit.
+
+  ==================================
+  ==================================
+
+  APPLESCRIPT SYNTAX FOR TEXTWRANGLER
+  Updated June 18, 2012 (based on the original Hernandez file)
+
+  MODIFIED FOR APPLESCRIPT V2 BY Angles ( https://github.com/Angles )
+  Version 2.0 (arbitrary, it sounds official).
+  (for my personal use, more terms, more colors, it works for me, that OK)
+  a. adding new terms and delete some depreciated ones.
+  b. other changes, eg, only applescript extension 
+  c. Trying BBLMPredefinedNameList "Predefined names"
+  Notes from this page:
+     http://www.barebones.com/support/bbedit/arch_bbedit9.html
+     This symbol class is used for words:
+      - which are not language keywords, 
+      - but which are predefined by the language's reference implementation 
+      - and/or are part of the language's standard library/framework support 
+      - and/or have other "special" meaning to developers writing code in that language.
+
+		 Language module developers may use the following constructs to support predefined names:
+		 If a BBLMPredefinedNameList key appears in the module's property list, 
+		 it is an array of strings, each of which is a predefined name. 
+
 -->
 <dict>
 	<key>BBEditDocumentType</key>
@@ -46,8 +71,53 @@
 	<true/>
 	<key>BBLMIsCaseSensitive</key>
 	<false/>
+
+	<!-- Testing use of this symbol: -->
+	<key>BBLMPredefinedNameList</key>
+	<array>
+		<string>alias</string>
+		<string>at</string>
+		<string>color</string>
+		<string>command</string>
+		<string>contains</string>
+		<string>do</string>
+		<string>down</string>
+		<string>equals</string>
+		<string>every</string>
+		<string>first</string>
+		<string>font</string>
+		<string>front</string>
+		<string>is</string>
+		<string>last</string>
+		<string>new</string>
+		<string>of</string>
+		<string>paragraph</string>
+		<string>POSIX</string>
+		<string>reference</string>
+		<string>sheet</string>
+		<string>shift</string>
+		<string>size</string>
+		<string>style name</string>
+		<string>typeface</string>
+		<string>typefaces</string>
+		<string>with</string>
+	</array>
+	
 	<key>BBLMKeywordList</key>
 	<array>
+	
+    <!-- New for AppleScript 2.0 or missing: -->
+    <!-- AppleScript apostrophy s does not work -->
+		<string>AppleScript</string>
+		<string>delay</string>
+		<string>global</string>
+		<string>documents</string>
+		<string>local</string>
+		<string>my</string>
+		<string>properties</string>
+		<string>return</string>
+
+		<!-- AppleScript pre-2.0: -->
 		<string>Bill</string>
 		<string>Hernandez</string>
 		<string>{</string>
@@ -64,6 +134,7 @@
 		<string>as</string>
 		<string>ASCII</string>
 		<string>balance</string>
+		<string>beep</string>
 		<string>breaks</string>
 		<string>browser</string>
 		<string>button</string>
@@ -82,6 +153,7 @@
 		<string>close</string>
 		<string>column</string>
 		<string>compare</string>
+		<string>container</string>
 		<string>containing</string>
 		<string>convert</string>
 		<string>copy</string>
@@ -105,6 +177,7 @@
 		<string>endings</string>
 		<string>entab</string>
 		<string>Entry</string>
+		<string>equal</string>
 		<string>exists</string>
 		<string>extended</string>
 		<string>factory</string>
@@ -114,6 +187,7 @@
 		<string>filter_term</string>
 		<string>find</string>
 		<string>folder</string>
+		<string>form</string>
 		<string>format</string>
 		<string>from</string>
 		<string>FTP</string>
@@ -146,10 +220,10 @@
 		<string>make</string>
 		<string>mark</string>
 		<string>Match</string>
+		<string>me</string>
 		<string>move</string>
 		<string>movie</string>
 		<string>multifile_differences_window</string>
-		<string>my</string>
 		<string>normalize</string>
 		<string>numbers</string>
 		<string>on</string>
@@ -162,6 +236,7 @@
 		<string>pair</string>
 		<string>palette</string>
 		<string>paste</string>
+		<string>path</string>
 		<string>perl_reference_window</string>
 		<string>picture</string>
 		<string>plugin_info_window</string>
@@ -198,7 +273,7 @@
 		<string>set</string>
 		<string>settings</string>
 		<string>shell</string>
-		<string>shift</string>
+	<!--	<string>shift</string> -->
 		<string>showing</string>
 		<string>site</string>
 		<string>sort</string>
@@ -235,25 +310,15 @@
 	<string>AppleScript</string>
 	<key>BBLMScansFunctions</key>
 	<true/>
+	
 	<key>BBLMSuffixMap</key>
 	<array>
 		<dict>
 			<key>BBLMLanguageSuffix</key>
-			<string>.scpt.txt</string>
-		</dict>
-		<dict>
-			<key>BBLMLanguageSuffix</key>
 			<string>.applescript</string>
 		</dict>
-		<dict>
-			<key>BBLMLanguageSuffix</key>
-			<string>.as.txt</string>
-		</dict>
-		<dict>
-			<key>BBLMLanguageSuffix</key>
-			<string>.scpt.as</string>
-		</dict>
 	</array>
+	
 	<key>Language Features</key>
 	<dict>
 		<key>Comment Pattern</key>
@@ -261,10 +326,11 @@
 		<key>String Pattern</key>
 		<string>"(\\.|[^"])*+"</string>
 		<key>Function Pattern</key>
-		<string>^on\s+(?P&lt;function_name&gt;\w+).*\r(?:.*\r)*?end\s+(?P=function_name)</string>
+		<string><![CDATA[(?x:
+			^on\s+(?P<function_name>\w+).*\r(?:.*\r)*?end\s+(?P=function_name)
+		)]]></string>
 		<key>Identifier and Keyword Character Class</key>
 		<string>\w</string>
-
 		<key>Close Block Comments</key>
 		<string>*)</string>
 		<key>Close Parameter Lists</key>

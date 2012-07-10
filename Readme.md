@@ -1,10 +1,10 @@
 ## Applescript Codeless Language Module for TextWrangler ##
 
-Modified version of the excellent Bill Hernandez CLM from [http://www.mail-archive.com/bbedit&#64;googlegroups.com/msg00548.html](http://www.mail-archive.com/bbedit%40googlegroups.com/msg00548.html) the like was [here](http://bbeditextras.org/wiki/index.php?title=Codeless_Language_Modules) at a wiki called _bbeditextras_. So __I started with the Hernandez version__. 
+Modified version of the excellent Bill Hernandez CLM from [http://www.mail-archive.com/bbedit&#64;googlegroups.com/msg00548.html](http://www.mail-archive.com/bbedit%40googlegroups.com/msg00548.html) the link was [here](http://bbeditextras.org/wiki/index.php?title=Codeless_Language_Modules) at a wiki called _bbeditextras_. So __I started with the Hernandez version__. 
 
 ### WTF is here? ###
 
-Since I'm __noob__ and forget what changes I made, I first put the [Bill Hernandez](http://www.mail-archive.com/bbedit@googlegroups.com/msg00548.html) version here, then __immediately__ commit my changed version. __Why?__ __So I can see WTF what I did__, I say. No one looks at changes anyway.
+Since I'm __noob__ and forget what changes I made, I first commit the [Bill Hernandez](http://www.mail-archive.com/bbedit@googlegroups.com/msg00548.html) version, then __immediately__ commit my changed version. __Why?__ __So I can see WTF what I did__, I say. No one looks at changes anyway.
 
 More Colors
 ----------

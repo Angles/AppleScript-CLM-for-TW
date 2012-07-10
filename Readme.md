@@ -11,8 +11,8 @@ More Colors
 
 I made _unorthodox_ use of the  Codeless Language Module `BBLMPredefinedNameList` _Predefined names_ info [here](http://www.barebones.com/support/develop/clm.html) it says _as used in the Text Colors preferences_. __more colors!__ Obligatory code example.
 
-``` plist
-<!-- Testing use of this symbol: -->
+``` xml
+<!-- Testing use of this symbol -->
 <key>BBLMPredefinedNameList</key>
 <array>
 	<string>alias</string>

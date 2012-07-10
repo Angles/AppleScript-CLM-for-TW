@@ -1,6 +1,5 @@
-## AppleScript CLM for TW ## 
-
 AppleScript-CLM-for-TW
+----------------------
 
 ## Applescript Codeless Language Module for TextWrangler ##
 
@@ -15,17 +14,17 @@ More Colors
 
 I made _unorthodox_ use of the  Codeless Language Module `BBLMPredefinedNameList` _Predefined names_ info [here](http://www.barebones.com/support/develop/clm.html) it says _as used in the Text Colors preferences_. __more colors!__ Obligatory code example.
 
-
-        <!-- Testing use of this symbol: -->
-        <key>BBLMPredefinedNameList</key>
-        <array>
-        	<string>alias</string>
-        	<string>at</string>
-           <!-- and so on -->
-        	<string>typefaces</string>
-        	<string>with</string>
-        </array>
-
+```
+<!-- Testing use of this symbol: -->
+<key>BBLMPredefinedNameList</key>
+<array>
+	<string>alias</string>
+	<string>at</string>
+   <!-- and so on -->
+	<string>typefaces</string>
+	<string>with</string>
+</array>
+```
 
 If you stumbled here (eg. mistyped URL) do know: 
 -----------------------------------------------

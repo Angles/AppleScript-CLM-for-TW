@@ -6,10 +6,14 @@ Modified version of the excellent Bill Hernandez CLM from [http://www.mail-archi
 
 Since I'm __noob__ and forget what changes I made, I first commit the [Bill Hernandez](http://www.mail-archive.com/bbedit@googlegroups.com/msg00548.html) version, then __immediately__ commit my changed version. __Why?__ __So I can see WTF what I did__, I say. No one looks at changes anyway.
 
+### What does it do? What's it all about? ###
+
+Provide color syntax for AppleScript in TextWrangler, _and maybe BBEdit but I don't have BBEdit_. It also does...
+
 More Colors
 ----------
 
-I made _unorthodox_ use of the  Codeless Language Module `BBLMPredefinedNameList` _Predefined names_ info [here](http://www.barebones.com/support/develop/clm.html) it says _as used in the Text Colors preferences_. __more colors!__ Obligatory code example.
+I made _unorthodox_ use of the _Codeless Language Module's_ `BBLMPredefinedNameList` _Predefined names_ info [here](http://www.barebones.com/support/develop/clm.html) it says _as used in the Text Colors preferences_. __more colors!__ Obligatory code example.
 
 ``` xml
 <!-- Testing use of this symbol -->

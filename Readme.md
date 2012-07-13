@@ -23,6 +23,11 @@ I made _unorthodox_ use of the  Codeless Language Module `BBLMPredefinedNameList
 </array>
 ```
 
+## Installation ##
+
+Likely, no one will see this stuff, so installation is not an issue. But if I forget, maybe I'll put that info here, or a link to it. Yes a link would be better. No wait, it's faster to Google it than to waste time adding to this readme file.
+
+
 If you stumbled here (eg. mistyped URL) do know: 
 -----------------------------------------------
 
